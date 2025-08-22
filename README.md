@@ -37,7 +37,7 @@
   <img src="public/screenshot3.png" alt="项目截图" style="max-width:600px">
 </details>
 
-### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目，不授权任何“科技周刊/月刊”类项目或站点收录本项目。[耻辱榜](https://github.com/MoonTechLab/LunaTV/issues/19)
+### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目，不授权任何“科技周刊/月刊”类项目或站点收录本项目。
 
 本项目为空项目，请勿 fork，喜欢可点 star
 
@@ -78,7 +78,7 @@ services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
@@ -113,7 +113,7 @@ services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
@@ -150,7 +150,7 @@ services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
@@ -295,3 +295,7 @@ NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE 选项解释：
 - [Zwei](https://github.com/bestzwei) — 提供获取豆瓣数据的 cors proxy
 - [CMLiussss](https://github.com/cmliu) — 提供豆瓣 CDN 服务
 - 感谢所有提供免费影视接口的站点。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MoonTechLab/LunaTV&type=Date)](https://www.star-history.com/#MoonTechLab/LunaTV&Date)
